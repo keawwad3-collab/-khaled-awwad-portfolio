@@ -7,7 +7,7 @@ const projects = [
     category: "Brand Systems", 
     featured: true,
     image: "/projects/sharaf_electronics_guideline.webp",
-    behanceLink: "https://www.behance.net/gallery/Sharaf-Electronics-Guideline"
+    behanceLink: "https://www.behance.net/khaledawwad"
   },
   { 
     id: 2, 
@@ -15,7 +15,7 @@ const projects = [
     category: "Packaging Design", 
     featured: true,
     image: "/projects/hello_products.webp",
-    behanceLink: "https://www.behance.net/gallery/Hello-Products"
+    behanceLink: "https://www.behance.net/khaledawwad"
   },
   { 
     id: 3, 
@@ -23,7 +23,7 @@ const projects = [
     category: "Retail Design", 
     featured: true,
     image: "/projects/make_it_personal.webp",
-    behanceLink: "https://www.behance.net/gallery/Make-It-Personal"
+    behanceLink: "https://www.behance.net/khaledawwad"
   },
   { 
     id: 4, 
@@ -31,7 +31,7 @@ const projects = [
     category: "Branding", 
     featured: false,
     image: "/projects/mykozie_logo.webp",
-    behanceLink: "https://www.behance.net/gallery/Mykozie-logo"
+    behanceLink: "https://www.behance.net/khaledawwad"
   },
   { 
     id: 5, 
@@ -39,7 +39,7 @@ const projects = [
     category: "Packaging Design", 
     featured: false,
     image: "/projects/bbq_sauce.webp",
-    behanceLink: "https://www.behance.net/gallery/BBQ-Sauce"
+    behanceLink: "https://www.behance.net/khaledawwad"
   },
   { 
     id: 6, 
@@ -47,7 +47,7 @@ const projects = [
     category: "Product Design", 
     featured: false,
     image: "/projects/hello_hot_ketchup.webp",
-    behanceLink: "https://www.behance.net/gallery/Hello-Hot-Ketchup"
+    behanceLink: "https://www.behance.net/khaledawwad"
   },
   { 
     id: 7, 
@@ -55,7 +55,7 @@ const projects = [
     category: "Packaging", 
     featured: false,
     image: "/projects/dipping_sauce_package.webp",
-    behanceLink: "https://www.behance.net/gallery/Dipping-Sauce-Package"
+    behanceLink: "https://www.behance.net/khaledawwad"
   },
   { 
     id: 8, 
@@ -63,7 +63,7 @@ const projects = [
     category: "Digital Content", 
     featured: false,
     image: "/projects/social_media_posts.webp",
-    behanceLink: "https://www.behance.net/gallery/Social-Media-Posts"
+    behanceLink: "https://www.behance.net/khaledawwad"
   },
   { 
     id: 9, 
@@ -71,7 +71,7 @@ const projects = [
     category: "Retail Design", 
     featured: false,
     image: "/projects/exhibition_stand_design.webp",
-    behanceLink: "https://www.behance.net/gallery/Exhibition-Stand-design"
+    behanceLink: "https://www.behance.net/khaledawwad"
   },
   { 
     id: 10, 
@@ -79,7 +79,7 @@ const projects = [
     category: "Retail Design", 
     featured: false,
     image: "/projects/exhibition_stand_design_2.webp",
-    behanceLink: "https://www.behance.net/gallery/Exhibition-Stand-Design"
+    behanceLink: "https://www.behance.net/khaledawwad"
   },
   { 
     id: 11, 
@@ -87,7 +87,7 @@ const projects = [
     category: "Automotive", 
     featured: false,
     image: "/projects/mazda_campaign_2.webp",
-    behanceLink: "https://www.behance.net/gallery/Mazda-Campaign-2"
+    behanceLink: "https://www.behance.net/khaledawwad"
   },
   { 
     id: 12, 
@@ -95,7 +95,7 @@ const projects = [
     category: "Event Design", 
     featured: false,
     image: "/projects/chillout_dubai.webp",
-    behanceLink: "https://www.behance.net/gallery/Chillout-Dubai"
+    behanceLink: "https://www.behance.net/khaledawwad"
   },
 ];
 
@@ -106,17 +106,17 @@ export default function Portfolio() {
   return (
     <div className="min-h-screen bg-background">
       {/* Navigation */}
-      <nav className="sticky top-0 z-50 bg-white border-b border-border">
+      <nav className="sticky top-0 z-50 bg-primary border-b border-border">
         <div className="container max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
           <Link href="/">
             <img src="/ka-logo.png" alt="KA Logo" className="h-10 w-10 object-contain" />
           </Link>
           <div className="hidden md:flex gap-8">
-            <Link href="/">Home</Link>
-            <Link href="/about">About</Link>
-            <Link href="/portfolio" className="text-accent font-semibold">Portfolio</Link>
-            <Link href="/case-studies">Case Studies</Link>
-            <Link href="/contact">Contact</Link>
+            <Link href="/" className="text-white hover:text-accent transition-colors">Home</Link>
+            <Link href="/about" className="text-white hover:text-accent transition-colors">About</Link>
+            <Link href="/portfolio" className="text-white font-semibold hover:text-accent transition-colors">Portfolio</Link>
+            <Link href="/case-studies" className="text-white hover:text-accent transition-colors">Case Studies</Link>
+            <Link href="/contact" className="text-white hover:text-accent transition-colors">Contact</Link>
           </div>
         </div>
       </nav>
@@ -124,7 +124,7 @@ export default function Portfolio() {
       <main className="container max-w-6xl mx-auto px-4 py-20">
         {/* Page Header */}
         <div className="mb-16">
-          <h1 className="text-5xl font-bold text-black mb-4" style={{ fontFamily: 'Montserrat' }}>
+          <h1 className="text-5xl font-bold text-primary mb-4" style={{ fontFamily: 'Montserrat' }}>
             Portfolio
           </h1>
           <p className="text-xl text-foreground">
@@ -134,7 +134,7 @@ export default function Portfolio() {
 
         {/* Featured Projects */}
         <div className="mb-20">
-          <h2 className="text-3xl font-bold text-black mb-12" style={{ fontFamily: 'Montserrat' }}>
+          <h2 className="text-3xl font-bold text-primary mb-12" style={{ fontFamily: 'Montserrat' }}>
             Featured Work
           </h2>
           
@@ -158,7 +158,7 @@ export default function Portfolio() {
                   <p className="text-sm font-semibold text-accent uppercase tracking-wide">
                     {project.category}
                   </p>
-                  <h3 className="text-xl font-bold text-black group-hover:text-accent transition-colors" style={{ fontFamily: 'Montserrat' }}>
+                  <h3 className="text-xl font-bold text-primary group-hover:text-accent transition-colors" style={{ fontFamily: 'Montserrat' }}>
                     {project.name}
                   </h3>
                 </div>
@@ -169,7 +169,7 @@ export default function Portfolio() {
 
         {/* All Projects Grid */}
         <div>
-          <h2 className="text-3xl font-bold text-black mb-12" style={{ fontFamily: 'Montserrat' }}>
+          <h2 className="text-3xl font-bold text-primary mb-12" style={{ fontFamily: 'Montserrat' }}>
             All Projects
           </h2>
           
@@ -193,7 +193,7 @@ export default function Portfolio() {
                   <p className="text-xs font-semibold text-accent uppercase tracking-wide">
                     {project.category}
                   </p>
-                  <h3 className="text-sm font-bold text-black group-hover:text-accent transition-colors" style={{ fontFamily: 'Montserrat' }}>
+                  <h3 className="text-sm font-bold text-primary group-hover:text-accent transition-colors" style={{ fontFamily: 'Montserrat' }}>
                     {project.name}
                   </h3>
                 </div>
@@ -221,7 +221,7 @@ export default function Portfolio() {
               <p className="text-foreground">Strategic creative leader specializing in brand growth and market expansion.</p>
             </div>
             <div>
-              <h4 className="font-bold text-black mb-4">Quick Links</h4>
+              <h4 className="font-bold text-primary mb-4">Quick Links</h4>
               <ul className="space-y-2 text-foreground">
                 <li><Link href="/about">About</Link></li>
                 <li><Link href="/portfolio">Portfolio</Link></li>
@@ -229,11 +229,11 @@ export default function Portfolio() {
               </ul>
             </div>
             <div>
-              <h4 className="font-bold text-black mb-4">Connect</h4>
+              <h4 className="font-bold text-primary mb-4">Connect</h4>
               <ul className="space-y-2 text-foreground">
-                <li><a href="https://linkedin.com/in/khaledawwad" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                <li><a href="https://behance.net/khaledawwad" target="_blank" rel="noopener noreferrer">Behance</a></li>
-                <li><Link href="/contact">Contact</Link></li>
+                <li><a href="https://linkedin.com/in/khaledawwad" target="_blank" rel="noopener noreferrer" className="hover:text-accent">LinkedIn</a></li>
+                <li><a href="https://behance.net/khaledawwad" target="_blank" rel="noopener noreferrer" className="hover:text-accent">Behance</a></li>
+                <li><Link href="/contact" className="hover:text-accent">Contact</Link></li>
               </ul>
             </div>
           </div>

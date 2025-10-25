@@ -43,76 +43,76 @@
 }
 
 :root {
-  /* Khaled Awwad Portfolio Design System - Black, Yellow, White */
-  --primary: #000000; /* Black */
+  /* Khaled Awwad Portfolio Design System */
+  --primary: #2C5F8D; /* Blue */
   --primary-foreground: #FFFFFF;
-  --sidebar-primary: #000000;
+  --sidebar-primary: #2C5F8D;
   --sidebar-primary-foreground: #FFFFFF;
-  --chart-1: #FFD700; /* Yellow */
-  --chart-2: #000000; /* Black */
-  --chart-3: #FFFFFF; /* White */
+  --chart-1: #D4AF37; /* Gold */
+  --chart-2: #2C5F8D; /* Blue */
+  --chart-3: #16A085; /* Teal */
   --chart-4: #F39C12; /* Orange */
   --chart-5: #E74C3C; /* Red */
   --radius: 0rem;
   --background: #FFFFFF;
-  --foreground: #000000;
+  --foreground: #333333;
   --card: #F9F9F9;
   --card-foreground: #000000;
   --popover: #FFFFFF;
-  --popover-foreground: #000000;
+  --popover-foreground: #333333;
   --secondary: #F5F5F5;
-  --secondary-foreground: #333333;
+  --secondary-foreground: #666666;
   --muted: #CCCCCC;
-  --muted-foreground: #666666;
-  --accent: #FFD700; /* Yellow */
+  --muted-foreground: #999999;
+  --accent: #D4AF37; /* Gold */
   --accent-foreground: #000000;
   --destructive: #E74C3C;
   --destructive-foreground: #FFFFFF;
-  --border: #000000;
+  --border: #CCCCCC;
   --input: #F5F5F5;
-  --ring: #FFD700; /* Yellow */
+  --ring: #2C5F8D; /* Blue */
   --sidebar: #FFFFFF;
-  --sidebar-foreground: #000000;
-  --sidebar-accent: #FFD700;
+  --sidebar-foreground: #333333;
+  --sidebar-accent: #D4AF37;
   --sidebar-accent-foreground: #000000;
-  --sidebar-border: #000000;
-  --sidebar-ring: #FFD700;
+  --sidebar-border: #CCCCCC;
+  --sidebar-ring: #2C5F8D;
 }
 
 .dark {
-  /* Dark theme for Khaled Awwad Portfolio - Black, Yellow, White */
-  --primary: #000000;
+  /* Dark theme for Khaled Awwad Portfolio */
+  --primary: #2C5F8D;
   --primary-foreground: #FFFFFF;
-  --sidebar-primary: #000000;
+  --sidebar-primary: #2C5F8D;
   --sidebar-primary-foreground: #FFFFFF;
   --background: #1A1A1A;
-  --foreground: #FFFFFF;
+  --foreground: #E8E8E8;
   --card: #2A2A2A;
-  --card-foreground: #FFFFFF;
+  --card-foreground: #E8E8E8;
   --popover: #2A2A2A;
-  --popover-foreground: #FFFFFF;
+  --popover-foreground: #E8E8E8;
   --secondary: #333333;
   --secondary-foreground: #CCCCCC;
   --muted: #444444;
   --muted-foreground: #AAAAAA;
-  --accent: #FFD700;
-  --accent-foreground: #000000;
+  --accent: #D4AF37;
+  --accent-foreground: #1A1A1A;
   --destructive: #E74C3C;
   --destructive-foreground: #FFFFFF;
   --border: #333333;
   --input: #2A2A2A;
-  --ring: #FFD700;
-  --chart-1: #FFD700;
-  --chart-2: #000000;
-  --chart-3: #FFFFFF;
+  --ring: #D4AF37;
+  --chart-1: #D4AF37;
+  --chart-2: #2C5F8D;
+  --chart-3: #16A085;
   --chart-4: #F39C12;
   --chart-5: #E74C3C;
   --sidebar: #2A2A2A;
-  --sidebar-foreground: #FFFFFF;
-  --sidebar-accent: #FFD700;
-  --sidebar-accent-foreground: #000000;
+  --sidebar-foreground: #E8E8E8;
+  --sidebar-accent: #D4AF37;
+  --sidebar-accent-foreground: #1A1A1A;
   --sidebar-border: #333333;
-  --sidebar-ring: #FFD700;
+  --sidebar-ring: #D4AF37;
 }
 
 @layer base {

@@ -9,7 +9,8 @@ export default function Home() {
       category: "Retail Strategy",
       description: "Transforming retail experience across 22+ locations with strategic design system",
       color: "border-accent",
-      image: "/projects/wix_sharaf_brand_guide.webp"
+      image: "/projects/wix_sharaf_brand_guide.webp",
+      behanceLink: "https://www.behance.net/khaledawwad"
     },
     {
       id: 2,
@@ -17,7 +18,8 @@ export default function Home() {
       category: "Digital Marketing",
       description: "Strategic branding and digital marketing campaigns for market expansion",
       color: "border-primary",
-      image: "/projects/wix_project_signage.webp"
+      image: "/projects/wix_project_signage.webp",
+      behanceLink: "https://www.behance.net/khaledawwad"
     },
     {
       id: 3,
@@ -25,24 +27,25 @@ export default function Home() {
       category: "Brand Design",
       description: "Comprehensive product design and packaging strategy for premium positioning",
       color: "border-accent",
-      image: "/projects/wix_product_display.webp"
+      image: "/projects/wix_product_display.webp",
+      behanceLink: "https://www.behance.net/khaledawwad"
     },
   ];
 
   return (
     <div className="min-h-screen bg-background">
       {/* Navigation */}
-      <nav className="sticky top-0 z-50 bg-white border-b border-border">
+      <nav className="sticky top-0 z-50 bg-primary border-b border-border">
         <div className="container max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
           <Link href="/">
             <img src="/ka-logo.png" alt="KA Logo" className="h-10 w-10 object-contain" />
           </Link>
           <div className="hidden md:flex gap-8">
-            <Link href="/" className="text-accent font-semibold">Home</Link>
-            <Link href="/about">About</Link>
-            <Link href="/portfolio">Portfolio</Link>
-            <Link href="/case-studies">Case Studies</Link>
-            <Link href="/contact">Contact</Link>
+            <Link href="/" className="text-white font-semibold hover:text-accent transition-colors">Home</Link>
+            <Link href="/about" className="text-white hover:text-accent transition-colors">About</Link>
+            <Link href="/portfolio" className="text-white hover:text-accent transition-colors">Portfolio</Link>
+            <Link href="/case-studies" className="text-white hover:text-accent transition-colors">Case Studies</Link>
+            <Link href="/contact" className="text-white hover:text-accent transition-colors">Contact</Link>
           </div>
         </div>
       </nav>
@@ -52,7 +55,7 @@ export default function Home() {
         <section className="container max-w-6xl mx-auto px-4 py-32 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
             <div>
-              <h1 className="text-6xl font-bold text-black leading-tight mb-6" style={{ fontFamily: 'Montserrat' }}>
+              <h1 className="text-6xl font-bold text-primary leading-tight mb-6" style={{ fontFamily: 'Montserrat' }}>
                 Building Brands That Scale
               </h1>
               <p className="text-xl text-foreground leading-relaxed">
@@ -87,7 +90,7 @@ export default function Home() {
         {/* Featured Work Section */}
         <section className="bg-gray-50 py-20">
           <div className="container max-w-6xl mx-auto px-4">
-            <h2 className="text-4xl font-bold text-black mb-4" style={{ fontFamily: 'Montserrat' }}>
+            <h2 className="text-4xl font-bold text-primary mb-4" style={{ fontFamily: 'Montserrat' }}>
               Featured Work
             </h2>
             <p className="text-xl text-foreground mb-16">
@@ -96,26 +99,30 @@ export default function Home() {
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {featuredProjects.map((project) => (
-                <Link key={project.id} href="/portfolio">
-                  <div className="group cursor-pointer">
-                    <div className="bg-card border-2 border-border aspect-video mb-4 flex items-center justify-center overflow-hidden hover:border-accent transition-colors">
-                      <img 
-                        src={project.image} 
-                        alt={project.name}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      />
-                    </div>
-                    <p className="text-sm font-semibold text-accent uppercase tracking-wide mb-2">
-                      {project.category}
-                    </p>
-                    <h3 className="text-xl font-bold text-black mb-2" style={{ fontFamily: 'Montserrat' }}>
-                      {project.name}
-                    </h3>
-                    <p className="text-foreground">
-                      {project.description}
-                    </p>
+                <a 
+                  key={project.id} 
+                  href={project.behanceLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group cursor-pointer"
+                >
+                  <div className="bg-card border-2 border-border aspect-video mb-4 flex items-center justify-center overflow-hidden hover:border-accent transition-colors">
+                    <img 
+                      src={project.image} 
+                      alt={project.name}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
                   </div>
-                </Link>
+                  <p className="text-sm font-semibold text-accent uppercase tracking-wide mb-2">
+                    {project.category}
+                  </p>
+                  <h3 className="text-xl font-bold text-primary mb-2 group-hover:text-accent transition-colors" style={{ fontFamily: 'Montserrat' }}>
+                    {project.name}
+                  </h3>
+                  <p className="text-foreground">
+                    {project.description}
+                  </p>
+                </a>
               ))}
             </div>
           </div>
@@ -123,14 +130,14 @@ export default function Home() {
 
         {/* Core Competencies */}
         <section className="container max-w-6xl mx-auto px-4 py-20">
-          <h2 className="text-4xl font-bold text-black mb-16" style={{ fontFamily: 'Montserrat' }}>
+          <h2 className="text-4xl font-bold text-primary mb-16" style={{ fontFamily: 'Montserrat' }}>
             Core Competencies
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="space-y-4">
               <div className="h-1 w-20 bg-accent"></div>
-              <h3 className="text-2xl font-bold text-black" style={{ fontFamily: 'Montserrat' }}>
+              <h3 className="text-2xl font-bold text-primary" style={{ fontFamily: 'Montserrat' }}>
                 Digital Strategy & Marketing
               </h3>
               <p className="text-sm font-semibold text-accent uppercase tracking-wide">DATA-DRIVEN GROWTH</p>
@@ -145,7 +152,7 @@ export default function Home() {
 
             <div className="space-y-4">
               <div className="h-1 w-20 bg-accent"></div>
-              <h3 className="text-2xl font-bold text-black" style={{ fontFamily: 'Montserrat' }}>
+              <h3 className="text-2xl font-bold text-primary" style={{ fontFamily: 'Montserrat' }}>
                 Brand Design & Creative Direction
               </h3>
               <p className="text-sm font-semibold text-accent uppercase tracking-wide">SYSTEMATIC CREATIVITY</p>
@@ -160,7 +167,7 @@ export default function Home() {
 
             <div className="space-y-4">
               <div className="h-1 w-20 bg-accent"></div>
-              <h3 className="text-2xl font-bold text-black" style={{ fontFamily: 'Montserrat' }}>
+              <h3 className="text-2xl font-bold text-primary" style={{ fontFamily: 'Montserrat' }}>
                 Retail & Launch Strategy
               </h3>
               <p className="text-sm font-semibold text-accent uppercase tracking-wide">OMNICHANNEL EXCELLENCE</p>
@@ -176,7 +183,7 @@ export default function Home() {
         </section>
 
         {/* CTA Section */}
-        <section className="bg-black text-white py-20">
+        <section className="bg-primary text-white py-20">
           <div className="container max-w-6xl mx-auto px-4 text-center space-y-8">
             <h2 className="text-4xl font-bold" style={{ fontFamily: 'Montserrat' }}>
               Ready to Start a Project?
@@ -202,7 +209,7 @@ export default function Home() {
               <p className="text-foreground">Strategic creative leader specializing in brand growth and market expansion.</p>
             </div>
             <div>
-              <h4 className="font-bold text-black mb-4">Quick Links</h4>
+              <h4 className="font-bold text-primary mb-4">Quick Links</h4>
               <ul className="space-y-2 text-foreground">
                 <li><Link href="/about">About</Link></li>
                 <li><Link href="/portfolio">Portfolio</Link></li>
@@ -210,11 +217,11 @@ export default function Home() {
               </ul>
             </div>
             <div>
-              <h4 className="font-bold text-black mb-4">Connect</h4>
+              <h4 className="font-bold text-primary mb-4">Connect</h4>
               <ul className="space-y-2 text-foreground">
-                <li><a href="https://linkedin.com/in/khaledawwad" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                <li><a href="https://behance.net/khaledawwad" target="_blank" rel="noopener noreferrer">Behance</a></li>
-                <li><Link href="/contact">Contact</Link></li>
+                <li><a href="https://linkedin.com/in/khaledawwad" target="_blank" rel="noopener noreferrer" className="hover:text-accent">LinkedIn</a></li>
+                <li><a href="https://behance.net/khaledawwad" target="_blank" rel="noopener noreferrer" className="hover:text-accent">Behance</a></li>
+                <li><Link href="/contact" className="hover:text-accent">Contact</Link></li>
               </ul>
             </div>
           </div>
