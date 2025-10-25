@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import { Button } from "@/components/ui/button";
 import { useState } from "react";
 
 export default function Contact() {
@@ -6,15 +7,18 @@ export default function Contact() {
     name: "",
     email: "",
     subject: "",
-    message: "",
+    message: ""
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: any) => {
     const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault();
     // Handle form submission
     console.log("Form submitted:", formData);
@@ -28,7 +32,7 @@ export default function Contact() {
       <nav className="sticky top-0 z-50 bg-white border-b border-border">
         <div className="container max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
           <Link href="/">
-            <span className="text-2xl font-bold text-black">KA</span>
+            <img src="/ka-logo.png" alt="KA Logo" className="h-10 w-10 object-contain" />
           </Link>
           <div className="hidden md:flex gap-8">
             <Link href="/">Home</Link>
@@ -42,169 +46,199 @@ export default function Contact() {
 
       <main className="container max-w-6xl mx-auto px-4 py-20">
         {/* Page Header */}
-        <div className="mb-20">
+        <div className="mb-16 text-center">
           <h1 className="text-5xl font-bold text-black mb-4" style={{ fontFamily: 'Montserrat' }}>
-            Get In Touch
+            Let's Work Together
           </h1>
-          <p className="text-xl text-foreground max-w-2xl">
-            Have a project in mind or want to discuss a collaboration? I'd love to hear from you.
+          <p className="text-xl text-foreground max-w-2xl mx-auto">
+            Have a project in mind? I'd love to hear about it. Get in touch and let's create something amazing.
           </p>
         </div>
 
-        {/* Content Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-20">
-          {/* Contact Methods */}
-          <div className="lg:col-span-1 space-y-8">
-            {/* Email */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-20">
+          {/* Contact Information */}
+          <div className="space-y-12">
             <div>
-              <h3 className="text-lg font-bold text-black mb-2" style={{ fontFamily: 'Montserrat' }}>
-                Email
-              </h3>
-              <p className="text-foreground mb-4">
-                keawwad@hotmail.com
-              </p>
-              <a href="mailto:keawwad@hotmail.com" className="inline-block bg-accent hover:bg-accent/90 text-black px-6 py-2 font-semibold">
-                Send Email
-              </a>
+              <h2 className="text-3xl font-bold text-black mb-8" style={{ fontFamily: 'Montserrat' }}>
+                Get In Touch
+              </h2>
+              
+              <div className="space-y-8">
+                {/* Email */}
+                <div className="space-y-2">
+                  <p className="text-sm font-semibold text-accent uppercase tracking-wide">Email</p>
+                  <a href="mailto:khaled@example.com" className="text-xl text-black hover:text-accent transition-colors">
+                    khaled@khaledawwad.com
+                  </a>
+                </div>
+
+                {/* Phone */}
+                <div className="space-y-2">
+                  <p className="text-sm font-semibold text-accent uppercase tracking-wide">Phone</p>
+                  <a href="tel:+1234567890" className="text-xl text-black hover:text-accent transition-colors">
+                    +1 (647) 555-0123
+                  </a>
+                </div>
+
+                {/* Location */}
+                <div className="space-y-2">
+                  <p className="text-sm font-semibold text-accent uppercase tracking-wide">Location</p>
+                  <p className="text-xl text-black">
+                    Toronto, Canada
+                  </p>
+                </div>
+              </div>
             </div>
 
-            {/* Phone */}
+            {/* Professional Profiles */}
             <div>
-              <h3 className="text-lg font-bold text-black mb-2" style={{ fontFamily: 'Montserrat' }}>
-                Phone
+              <h3 className="text-2xl font-bold text-black mb-6" style={{ fontFamily: 'Montserrat' }}>
+                Connect With Me
               </h3>
-              <p className="text-foreground mb-4">
-                +1 416 839 0390
-              </p>
-              <a href="tel:+14168390390" className="inline-block bg-accent hover:bg-accent/90 text-black px-6 py-2 font-semibold">
-                Call Now
-              </a>
-            </div>
-
-            {/* Location */}
-            <div>
-              <h3 className="text-lg font-bold text-black mb-2" style={{ fontFamily: 'Montserrat' }}>
-                Location
-              </h3>
-              <p className="text-foreground mb-2">
-                Ottawa, Canada
-              </p>
-              <p className="text-accent font-semibold mb-4">
-                Moving to Dubai
-              </p>
-            </div>
-
-            {/* Social Links */}
-            <div className="pt-8 border-t border-border">
-              <h3 className="text-lg font-bold text-black mb-4" style={{ fontFamily: 'Montserrat' }}>
-                Connect
-              </h3>
-              <div className="space-y-3">
-                <a href="#" className="block text-accent hover:text-accent/80 font-semibold">
-                  LinkedIn
+              
+              <div className="space-y-4">
+                <a 
+                  href="https://linkedin.com/in/khaledawwad" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-4 p-4 border-2 border-border hover:border-accent hover:bg-gray-50 transition-all"
+                >
+                  <div className="w-12 h-12 bg-accent flex items-center justify-center text-black font-bold">
+                    in
+                  </div>
+                  <div>
+                    <p className="font-semibold text-black">LinkedIn</p>
+                    <p className="text-sm text-foreground">linkedin.com/in/khaledawwad</p>
+                  </div>
                 </a>
-                <a href="#" className="block text-accent hover:text-accent/80 font-semibold">
-                  Behance
+
+                <a 
+                  href="https://behance.net/khaledawwad" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-4 p-4 border-2 border-border hover:border-accent hover:bg-gray-50 transition-all"
+                >
+                  <div className="w-12 h-12 bg-accent flex items-center justify-center text-black font-bold">
+                    Be
+                  </div>
+                  <div>
+                    <p className="font-semibold text-black">Behance</p>
+                    <p className="text-sm text-foreground">behance.net/khaledawwad</p>
+                  </div>
                 </a>
-                <a href="#" className="block text-accent hover:text-accent/80 font-semibold">
-                  Portfolio
+
+                <a 
+                  href="https://instagram.com/khaledawwad" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-4 p-4 border-2 border-border hover:border-accent hover:bg-gray-50 transition-all"
+                >
+                  <div className="w-12 h-12 bg-accent flex items-center justify-center text-black font-bold">
+                    @
+                  </div>
+                  <div>
+                    <p className="font-semibold text-black">Instagram</p>
+                    <p className="text-sm text-foreground">@khaledawwad</p>
+                  </div>
                 </a>
               </div>
             </div>
           </div>
 
           {/* Contact Form */}
-          <div className="lg:col-span-2">
+          <div>
             <form onSubmit={handleSubmit} className="space-y-6">
-              {/* Name */}
               <div>
-                <label className="block text-sm font-semibold text-primary uppercase tracking-wide mb-2">
-                  Name
-                </label>
+                <label className="block text-sm font-semibold text-black mb-2">Name</label>
                 <input
                   type="text"
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  placeholder="Your Name"
-                  className="w-full px-4 py-3 border border-border bg-card text-foreground placeholder-muted-foreground focus:outline-none focus:border-accent"
+                  required
+                  className="w-full px-4 py-3 border-2 border-border focus:border-accent focus:outline-none bg-white text-black"
+                  placeholder="Your name"
                 />
               </div>
 
-              {/* Email */}
               <div>
-                <label className="block text-sm font-semibold text-primary uppercase tracking-wide mb-2">
-                  Email
-                </label>
+                <label className="block text-sm font-semibold text-black mb-2">Email</label>
                 <input
                   type="email"
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  placeholder="Your Email"
-                  className="w-full px-4 py-3 border border-border bg-card text-foreground placeholder-muted-foreground focus:outline-none focus:border-accent"
+                  required
+                  className="w-full px-4 py-3 border-2 border-border focus:border-accent focus:outline-none bg-white text-black"
+                  placeholder="your@email.com"
                 />
               </div>
 
-              {/* Subject */}
               <div>
-                <label className="block text-sm font-semibold text-primary uppercase tracking-wide mb-2">
-                  Subject
-                </label>
+                <label className="block text-sm font-semibold text-black mb-2">Subject</label>
                 <input
                   type="text"
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  placeholder="What is this about?"
-                  className="w-full px-4 py-3 border border-border bg-card text-foreground placeholder-muted-foreground focus:outline-none focus:border-accent"
+                  required
+                  className="w-full px-4 py-3 border-2 border-border focus:border-accent focus:outline-none bg-white text-black"
+                  placeholder="Project subject"
                 />
               </div>
 
-              {/* Message */}
               <div>
-                <label className="block text-sm font-semibold text-primary uppercase tracking-wide mb-2">
-                  Message
-                </label>
+                <label className="block text-sm font-semibold text-black mb-2">Message</label>
                 <textarea
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder="Tell me about your project..."
+                  required
                   rows={6}
-                  className="w-full px-4 py-3 border border-border bg-card text-foreground placeholder-muted-foreground focus:outline-none focus:border-accent resize-none"
+                  className="w-full px-4 py-3 border-2 border-border focus:border-accent focus:outline-none bg-white text-black resize-none"
+                  placeholder="Tell me about your project..."
                 />
               </div>
 
-              {/* Submit */}
-              <div className="flex gap-4">
-                <button
-                  type="submit"
-                  className="bg-primary hover:bg-primary/90 text-white px-8 py-3 font-semibold"
-                >
-                  Send Message
-                </button>
-                <button
-                  type="reset"
-                  className="bg-card hover:bg-card/80 text-foreground border border-border px-8 py-3 font-semibold"
-                >
-                  Clear
-                </button>
-              </div>
+              <Button 
+                type="submit"
+                className="w-full bg-accent hover:bg-accent/90 text-black px-8 py-4 text-lg font-semibold"
+              >
+                Send Message
+              </Button>
             </form>
-
-            {/* Note */}
-            <p className="mt-8 text-sm text-muted-foreground">
-              💡 <strong>Tip:</strong> For faster response, you can also reach out directly via email or phone. I typically respond within 24-48 hours.
-            </p>
           </div>
         </div>
       </main>
 
       {/* Footer */}
-      <footer className="bg-card border-t border-border mt-20">
-        <div className="container max-w-6xl mx-auto px-4 py-12 text-center text-muted-foreground">
-          <p>&copy; 2024 Khaled Awwad. All rights reserved.</p>
+      <footer className="bg-white border-t border-border">
+        <div className="container max-w-6xl mx-auto px-4 py-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+              <img src="/ka-logo.png" alt="KA Logo" className="h-12 w-12 object-contain mb-4" />
+              <p className="text-foreground">Strategic creative leader specializing in brand growth and market expansion.</p>
+            </div>
+            <div>
+              <h4 className="font-bold text-black mb-4">Quick Links</h4>
+              <ul className="space-y-2 text-foreground">
+                <li><Link href="/about">About</Link></li>
+                <li><Link href="/portfolio">Portfolio</Link></li>
+                <li><Link href="/case-studies">Case Studies</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-bold text-black mb-4">Connect</h4>
+              <ul className="space-y-2 text-foreground">
+                <li><a href="https://linkedin.com/in/khaledawwad" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a href="https://behance.net/khaledawwad" target="_blank" rel="noopener noreferrer">Behance</a></li>
+                <li><Link href="/contact">Contact</Link></li>
+              </ul>
+            </div>
+          </div>
+          <div className="border-t border-border pt-8 text-center text-muted-foreground">
+            <p>&copy; 2024 Khaled Awwad. All rights reserved.</p>
+          </div>
         </div>
       </footer>
     </div>

@@ -9,20 +9,23 @@ export default function Home() {
       category: "Retail Strategy",
       description: "Transforming retail experience across 22+ locations with strategic design system",
       color: "border-accent",
+      image: "/projects/wix_sharaf_brand_guide.webp"
     },
     {
       id: 2,
-      name: "Hello Food",
+      name: "Brand Development",
       category: "Digital Marketing",
-      description: "Digital marketing strategy and brand launch driving market awareness",
+      description: "Strategic branding and digital marketing campaigns for market expansion",
       color: "border-primary",
+      image: "/projects/wix_project_signage.webp"
     },
     {
       id: 3,
-      name: "Go Sport",
+      name: "Product Design",
       category: "Brand Design",
-      description: "Brand redesign and market expansion strategy for premium positioning",
-      color: "border-teal-500",
+      description: "Comprehensive product design and packaging strategy for premium positioning",
+      color: "border-accent",
+      image: "/projects/wix_product_display.webp"
     },
   ];
 
@@ -31,9 +34,9 @@ export default function Home() {
       {/* Navigation */}
       <nav className="sticky top-0 z-50 bg-white border-b border-border">
         <div className="container max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-          <span className="text-2xl font-bold text-black" style={{ fontFamily: 'Montserrat' }}>
-            KA
-          </span>
+          <Link href="/">
+            <img src="/ka-logo.png" alt="KA Logo" className="h-10 w-10 object-contain" />
+          </Link>
           <div className="hidden md:flex gap-8">
             <Link href="/" className="text-accent font-semibold">Home</Link>
             <Link href="/about">About</Link>
@@ -71,172 +74,115 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Hero Image Placeholder */}
-          <div className="bg-card border border-border aspect-square flex items-center justify-center">
-            <div className="text-8xl font-bold text-muted-foreground opacity-50">
-              KA
-            </div>
+          {/* Hero Image */}
+          <div className="bg-card border border-border aspect-square flex items-center justify-center overflow-hidden">
+            <img 
+              src="/ka-logo.png" 
+              alt="KA Logo" 
+              className="w-full h-full object-cover"
+            />
           </div>
         </section>
 
         {/* Featured Work Section */}
-        <section className="bg-card border-t border-border py-20">
+        <section className="bg-gray-50 py-20">
           <div className="container max-w-6xl mx-auto px-4">
             <h2 className="text-4xl font-bold text-black mb-4" style={{ fontFamily: 'Montserrat' }}>
               Featured Work
             </h2>
-            <p className="text-lg text-foreground mb-16">
+            <p className="text-xl text-foreground mb-16">
               Recent projects demonstrating strategic expertise across brand design, digital marketing, and retail strategy.
             </p>
-
+            
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {featuredProjects.map((project) => (
-                <Link key={project.id} href="/case-studies">
-                  <div className="group cursor-pointer h-full">
-                    <div className={`bg-background border-2 ${project.color} aspect-video mb-6 flex items-center justify-center group-hover:border-opacity-80 transition-all`}>
-                      <div className="text-5xl font-bold text-muted-foreground opacity-50">
-                        {project.id}
-                      </div>
+                <Link key={project.id} href="/portfolio">
+                  <div className="group cursor-pointer">
+                    <div className="bg-card border-2 border-border aspect-video mb-4 flex items-center justify-center overflow-hidden hover:border-accent transition-colors">
+                      <img 
+                        src={project.image} 
+                        alt={project.name}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
                     </div>
-                    <div className="space-y-2">
-                      <p className="text-sm font-semibold text-accent uppercase tracking-wide">
-                        {project.category}
-                      </p>
-                      <h3 className="text-xl font-bold text-black" style={{ fontFamily: 'Montserrat' }}>
-                        {project.name}
-                      </h3>
-                      <p className="text-foreground text-sm leading-relaxed">
-                        {project.description}
-                      </p>
-                    </div>
+                    <p className="text-sm font-semibold text-accent uppercase tracking-wide mb-2">
+                      {project.category}
+                    </p>
+                    <h3 className="text-xl font-bold text-black mb-2" style={{ fontFamily: 'Montserrat' }}>
+                      {project.name}
+                    </h3>
+                    <p className="text-foreground">
+                      {project.description}
+                    </p>
                   </div>
                 </Link>
               ))}
             </div>
-
-            <div className="mt-12 text-center">
-              <Link href="/portfolio">
-                <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-4 text-lg font-semibold">
-                  View All Projects
-                </Button>
-              </Link>
-            </div>
           </div>
         </section>
 
-        {/* Core Competencies Section */}
+        {/* Core Competencies */}
         <section className="container max-w-6xl mx-auto px-4 py-20">
           <h2 className="text-4xl font-bold text-black mb-16" style={{ fontFamily: 'Montserrat' }}>
             Core Competencies
           </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Pillar 1 */}
-            <div className="p-8 bg-card border-t-4 border-accent">
-              <h3 className="text-2xl font-bold text-black mb-4" style={{ fontFamily: 'Montserrat' }}>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div className="space-y-4">
+              <div className="h-1 w-20 bg-accent"></div>
+              <h3 className="text-2xl font-bold text-black" style={{ fontFamily: 'Montserrat' }}>
                 Digital Strategy & Marketing
               </h3>
-              <p className="text-sm text-accent font-semibold uppercase tracking-wide mb-6">
-                Data-Driven Growth
-              </p>
-              <ul className="space-y-3 text-foreground">
-                <li className="flex items-start gap-3">
-                  <span className="text-accent font-bold">→</span>
-                  <span>SEO & PPC Optimization</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-accent font-bold">→</span>
-                  <span>Social Media Marketing</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-accent font-bold">→</span>
-                  <span>Data-Driven Analytics</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-accent font-bold">→</span>
-                  <span>Campaign Management</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-accent font-bold">→</span>
-                  <span>Omnichannel Strategy</span>
-                </li>
+              <p className="text-sm font-semibold text-accent uppercase tracking-wide">DATA-DRIVEN GROWTH</p>
+              <ul className="space-y-2 text-foreground">
+                <li>• SEO & PPC Optimization</li>
+                <li>• Social Media Marketing</li>
+                <li>• Data-Driven Analytics</li>
+                <li>• Campaign Management</li>
+                <li>• Omnichannel Strategy</li>
               </ul>
             </div>
 
-            {/* Pillar 2 */}
-            <div className="p-8 bg-card border-t-4 border-primary">
-              <h3 className="text-2xl font-bold text-black mb-4" style={{ fontFamily: 'Montserrat' }}>
+            <div className="space-y-4">
+              <div className="h-1 w-20 bg-accent"></div>
+              <h3 className="text-2xl font-bold text-black" style={{ fontFamily: 'Montserrat' }}>
                 Brand Design & Creative Direction
               </h3>
-              <p className="text-sm text-primary font-semibold uppercase tracking-wide mb-6">
-                Systematic Creativity
-              </p>
-              <ul className="space-y-3 text-foreground">
-                <li className="flex items-start gap-3">
-                  <span className="text-primary font-bold">→</span>
-                  <span>Brand Identity & Strategy</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-primary font-bold">→</span>
-                  <span>Creative Direction</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-primary font-bold">→</span>
-                  <span>Graphic Design</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-primary font-bold">→</span>
-                  <span>Web Design & UX</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-primary font-bold">→</span>
-                  <span>Packaging Design</span>
-                </li>
+              <p className="text-sm font-semibold text-accent uppercase tracking-wide">SYSTEMATIC CREATIVITY</p>
+              <ul className="space-y-2 text-foreground">
+                <li>• Brand Identity & Strategy</li>
+                <li>• Creative Direction</li>
+                <li>• Graphic Design</li>
+                <li>• Web Design & UX</li>
+                <li>• Packaging Design</li>
               </ul>
             </div>
 
-            {/* Pillar 3 */}
-            <div className="p-8 bg-card border-t-4 border-teal-500">
-              <h3 className="text-2xl font-bold text-black mb-4" style={{ fontFamily: 'Montserrat' }}>
+            <div className="space-y-4">
+              <div className="h-1 w-20 bg-accent"></div>
+              <h3 className="text-2xl font-bold text-black" style={{ fontFamily: 'Montserrat' }}>
                 Retail & Launch Strategy
               </h3>
-              <p className="text-sm text-teal-500 font-semibold uppercase tracking-wide mb-6">
-                Omnichannel Excellence
-              </p>
-              <ul className="space-y-3 text-foreground">
-                <li className="flex items-start gap-3">
-                  <span className="text-teal-500 font-bold">→</span>
-                  <span>Retail Systems Design</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-teal-500 font-bold">→</span>
-                  <span>Brand Launch Strategy</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-teal-500 font-bold">→</span>
-                  <span>In-Store Marketing</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-teal-500 font-bold">→</span>
-                  <span>Brand Experience Design</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-teal-500 font-bold">→</span>
-                  <span>Scalable Systems</span>
-                </li>
+              <p className="text-sm font-semibold text-accent uppercase tracking-wide">OMNICHANNEL EXCELLENCE</p>
+              <ul className="space-y-2 text-foreground">
+                <li>• Retail Systems Design</li>
+                <li>• Brand Launch Strategy</li>
+                <li>• In-Store Marketing</li>
+                <li>• Brand Experience Design</li>
+                <li>• Scalable Systems</li>
               </ul>
             </div>
           </div>
         </section>
 
         {/* CTA Section */}
-        <section className="bg-card border-t border-border py-20">
-          <div className="container max-w-6xl mx-auto px-4 text-center">
-            <h2 className="text-4xl font-bold text-black mb-6" style={{ fontFamily: 'Montserrat' }}>
+        <section className="bg-black text-white py-20">
+          <div className="container max-w-6xl mx-auto px-4 text-center space-y-8">
+            <h2 className="text-4xl font-bold" style={{ fontFamily: 'Montserrat' }}>
               Ready to Start a Project?
             </h2>
-            <p className="text-xl text-foreground mb-8 max-w-2xl mx-auto">
-              Let's discuss how I can help you build a brand that scales and drives measurable business results.
+            <p className="text-xl text-gray-300">
+              Let's discuss how I can help you build a brand that scales and drives measurable results.
             </p>
             <Link href="/contact">
               <Button className="bg-accent hover:bg-accent/90 text-black px-8 py-6 text-lg font-semibold">
@@ -248,9 +194,33 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-card border-t border-border mt-0">
-        <div className="container max-w-6xl mx-auto px-4 py-12 text-center text-muted-foreground">
-          <p>&copy; 2024 Khaled Awwad. All rights reserved.</p>
+      <footer className="bg-white border-t border-border">
+        <div className="container max-w-6xl mx-auto px-4 py-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+              <img src="/ka-logo.png" alt="KA Logo" className="h-12 w-12 object-contain mb-4" />
+              <p className="text-foreground">Strategic creative leader specializing in brand growth and market expansion.</p>
+            </div>
+            <div>
+              <h4 className="font-bold text-black mb-4">Quick Links</h4>
+              <ul className="space-y-2 text-foreground">
+                <li><Link href="/about">About</Link></li>
+                <li><Link href="/portfolio">Portfolio</Link></li>
+                <li><Link href="/case-studies">Case Studies</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-bold text-black mb-4">Connect</h4>
+              <ul className="space-y-2 text-foreground">
+                <li><a href="https://linkedin.com/in/khaledawwad" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a href="https://behance.net/khaledawwad" target="_blank" rel="noopener noreferrer">Behance</a></li>
+                <li><Link href="/contact">Contact</Link></li>
+              </ul>
+            </div>
+          </div>
+          <div className="border-t border-border pt-8 text-center text-muted-foreground">
+            <p>&copy; 2024 Khaled Awwad. All rights reserved.</p>
+          </div>
         </div>
       </footer>
     </div>

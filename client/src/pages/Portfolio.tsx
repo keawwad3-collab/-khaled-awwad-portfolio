@@ -6,84 +6,96 @@ const projects = [
     name: "Sharaf Electronics Guideline", 
     category: "Brand Systems", 
     featured: true,
-    image: "/projects/sharaf_electronics_guideline.webp"
+    image: "/projects/sharaf_electronics_guideline.webp",
+    behanceLink: "https://www.behance.net/gallery/Sharaf-Electronics-Guideline"
   },
   { 
     id: 2, 
     name: "Hello Products", 
     category: "Packaging Design", 
     featured: true,
-    image: "/projects/hello_products.webp"
+    image: "/projects/hello_products.webp",
+    behanceLink: "https://www.behance.net/gallery/Hello-Products"
   },
   { 
     id: 3, 
     name: "Make It Personal", 
     category: "Retail Design", 
     featured: true,
-    image: "/projects/make_it_personal.webp"
+    image: "/projects/make_it_personal.webp",
+    behanceLink: "https://www.behance.net/gallery/Make-It-Personal"
   },
   { 
     id: 4, 
     name: "Mykozie Logo", 
     category: "Branding", 
     featured: false,
-    image: "/projects/mykozie_logo.webp"
+    image: "/projects/mykozie_logo.webp",
+    behanceLink: "https://www.behance.net/gallery/Mykozie-logo"
   },
   { 
     id: 5, 
     name: "BBQ Sauce", 
     category: "Packaging Design", 
     featured: false,
-    image: "/projects/bbq_sauce.webp"
+    image: "/projects/bbq_sauce.webp",
+    behanceLink: "https://www.behance.net/gallery/BBQ-Sauce"
   },
   { 
     id: 6, 
     name: "Hello Hot Ketchup", 
     category: "Product Design", 
     featured: false,
-    image: "/projects/hello_hot_ketchup.webp"
+    image: "/projects/hello_hot_ketchup.webp",
+    behanceLink: "https://www.behance.net/gallery/Hello-Hot-Ketchup"
   },
   { 
     id: 7, 
     name: "Dipping Sauce Package", 
     category: "Packaging", 
     featured: false,
-    image: "/projects/dipping_sauce_package.webp"
+    image: "/projects/dipping_sauce_package.webp",
+    behanceLink: "https://www.behance.net/gallery/Dipping-Sauce-Package"
   },
   { 
     id: 8, 
     name: "Social Media Posts", 
     category: "Digital Content", 
     featured: false,
-    image: "/projects/social_media_posts.webp"
+    image: "/projects/social_media_posts.webp",
+    behanceLink: "https://www.behance.net/gallery/Social-Media-Posts"
   },
   { 
     id: 9, 
     name: "Exhibition Stand Design", 
     category: "Retail Design", 
     featured: false,
-    image: "/projects/exhibition_stand_design.webp"
+    image: "/projects/exhibition_stand_design.webp",
+    behanceLink: "https://www.behance.net/gallery/Exhibition-Stand-design"
   },
   { 
     id: 10, 
     name: "Exhibition Stand Design 2", 
     category: "Retail Design", 
     featured: false,
-    image: "/projects/exhibition_stand_design_2.webp"
+    image: "/projects/exhibition_stand_design_2.webp",
+    behanceLink: "https://www.behance.net/gallery/Exhibition-Stand-Design"
   },
   { 
     id: 11, 
     name: "Mazda Campaign 2", 
     category: "Automotive", 
     featured: false,
-    image: "/projects/mazda_campaign_2.webp"
+    image: "/projects/mazda_campaign_2.webp",
+    behanceLink: "https://www.behance.net/gallery/Mazda-Campaign-2"
   },
   { 
     id: 12, 
     name: "Chillout Dubai", 
     category: "Event Design", 
     featured: false,
-    image: "/projects/chillout_dubai.webp"
+    image: "/projects/chillout_dubai.webp",
+    behanceLink: "https://www.behance.net/gallery/Chillout-Dubai"
   },
 ];
 
@@ -97,7 +109,7 @@ export default function Portfolio() {
       <nav className="sticky top-0 z-50 bg-white border-b border-border">
         <div className="container max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
           <Link href="/">
-            <span className="text-2xl font-bold text-black">KA</span>
+            <img src="/ka-logo.png" alt="KA Logo" className="h-10 w-10 object-contain" />
           </Link>
           <div className="hidden md:flex gap-8">
             <Link href="/">Home</Link>
@@ -128,8 +140,14 @@ export default function Portfolio() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             {featuredProjects.map((project) => (
-              <div key={project.id} className="group cursor-pointer">
-                <div className="bg-card border border-border aspect-video mb-4 flex items-center justify-center overflow-hidden hover:border-accent transition-colors">
+              <a 
+                key={project.id} 
+                href={project.behanceLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group cursor-pointer"
+              >
+                <div className="bg-card border-2 border-border aspect-video mb-4 flex items-center justify-center overflow-hidden hover:border-accent transition-all duration-300">
                   <img 
                     src={project.image} 
                     alt={project.name}
@@ -140,11 +158,11 @@ export default function Portfolio() {
                   <p className="text-sm font-semibold text-accent uppercase tracking-wide">
                     {project.category}
                   </p>
-                  <h3 className="text-xl font-bold text-black" style={{ fontFamily: 'Montserrat' }}>
+                  <h3 className="text-xl font-bold text-black group-hover:text-accent transition-colors" style={{ fontFamily: 'Montserrat' }}>
                     {project.name}
                   </h3>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>
@@ -157,8 +175,14 @@ export default function Portfolio() {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {otherProjects.map((project) => (
-              <div key={project.id} className="group cursor-pointer">
-                <div className="bg-card border border-border aspect-square mb-3 flex items-center justify-center overflow-hidden hover:border-accent transition-colors">
+              <a 
+                key={project.id} 
+                href={project.behanceLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group cursor-pointer"
+              >
+                <div className="bg-card border-2 border-border aspect-square mb-3 flex items-center justify-center overflow-hidden hover:border-accent transition-all duration-300">
                   <img 
                     src={project.image} 
                     alt={project.name}
@@ -169,11 +193,11 @@ export default function Portfolio() {
                   <p className="text-xs font-semibold text-accent uppercase tracking-wide">
                     {project.category}
                   </p>
-                  <h3 className="text-sm font-bold text-black" style={{ fontFamily: 'Montserrat' }}>
+                  <h3 className="text-sm font-bold text-black group-hover:text-accent transition-colors" style={{ fontFamily: 'Montserrat' }}>
                     {project.name}
                   </h3>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>
@@ -189,9 +213,33 @@ export default function Portfolio() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-card border-t border-border mt-20">
-        <div className="container max-w-6xl mx-auto px-4 py-12 text-center text-muted-foreground">
-          <p>&copy; 2024 Khaled Awwad. All rights reserved.</p>
+      <footer className="bg-white border-t border-border mt-20">
+        <div className="container max-w-6xl mx-auto px-4 py-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+              <img src="/ka-logo.png" alt="KA Logo" className="h-12 w-12 object-contain mb-4" />
+              <p className="text-foreground">Strategic creative leader specializing in brand growth and market expansion.</p>
+            </div>
+            <div>
+              <h4 className="font-bold text-black mb-4">Quick Links</h4>
+              <ul className="space-y-2 text-foreground">
+                <li><Link href="/about">About</Link></li>
+                <li><Link href="/portfolio">Portfolio</Link></li>
+                <li><Link href="/case-studies">Case Studies</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-bold text-black mb-4">Connect</h4>
+              <ul className="space-y-2 text-foreground">
+                <li><a href="https://linkedin.com/in/khaledawwad" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a href="https://behance.net/khaledawwad" target="_blank" rel="noopener noreferrer">Behance</a></li>
+                <li><Link href="/contact">Contact</Link></li>
+              </ul>
+            </div>
+          </div>
+          <div className="border-t border-border pt-8 text-center text-muted-foreground">
+            <p>&copy; 2024 Khaled Awwad. All rights reserved.</p>
+          </div>
         </div>
       </footer>
     </div>
