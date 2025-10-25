@@ -111,3 +111,25 @@
 - [ ] Test all links to ensure they work correctly
 - [ ] Ensure responsive design works on all devices
 
+
+
+
+## CV & CREDENTIALS INTEGRATION
+- [ ] Extract CV content and add to About page
+- [ ] Add Google Certificate (without expiry date) to credentials section
+- [ ] Display certifications and qualifications
+- [ ] Add downloadable CV link
+
+## CASE STUDIES UPDATE
+- [ ] Create Hello Food case study page with company website link (https://hello-food.com)
+- [ ] Create Go Sport/DesignFab case study page with company website link (https://www.designfab.co)
+- [ ] Create Sharaf case study page with company website link (https://www.sharafgroup.com)
+- [ ] Extract case study content from PDFs
+- [ ] Add company links to case study pages
+- [ ] Ensure case studies link to correct Behance projects
+
+## PORTFOLIO LINKS VERIFICATION
+- [ ] Verify all Behance links from provided list are correctly mapped
+- [ ] Test all external links (Behance, company websites, LinkedIn)
+- [ ] Ensure portfolio images link to correct projects
+
