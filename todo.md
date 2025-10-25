@@ -74,6 +74,20 @@
 - [ ] Create deployment checklist
 - [ ] Launch website and promote across channels
 
+## Behance Image Integration
+- [ ] Download/collect images from Behance projects
+- [ ] Optimize images for web (compress, resize)
+- [ ] Add images to portfolio gallery
+- [ ] Update project cards with real images
+- [ ] Add Behance project links to portfolio items
+
+## Free Hosting & Deployment Options
+- [ ] Set up Vercel deployment (recommended)
+- [ ] Configure GitHub repository for version control
+- [ ] Set up automatic deployments from GitHub
+- [ ] Test website on live domain
+- [ ] Configure custom domain (optional)
+
 ## Optional Enhancements
 - [ ] Add smooth scroll animations
 - [ ] Implement dark mode toggle

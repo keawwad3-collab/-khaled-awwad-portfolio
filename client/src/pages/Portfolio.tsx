@@ -1,18 +1,90 @@
 import { Link } from "wouter";
 
 const projects = [
-  { id: 1, name: "YellowHat", category: "Brand Systems", featured: true },
-  { id: 2, name: "Sharaf Electronics", category: "Retail Design", featured: true },
-  { id: 3, name: "Hello Food", category: "Digital Marketing", featured: true },
-  { id: 4, name: "Go Sport", category: "Brand Launch", featured: false },
-  { id: 5, name: "DG Plus Exhibition", category: "Brand Systems", featured: false },
-  { id: 6, name: "Social Media Campaigns", category: "Digital Content", featured: false },
-  { id: 7, name: "Mykozie Logo", category: "Branding", featured: false },
-  { id: 8, name: "Stationery Design", category: "Design", featured: false },
-  { id: 9, name: "UAE Map Illustration", category: "Illustration", featured: false },
-  { id: 10, name: "Corporate Identity", category: "Brand Systems", featured: false },
-  { id: 11, name: "Packaging Concept", category: "Product Design", featured: false },
-  { id: 12, name: "Web Design Mockup", category: "Digital Design", featured: false },
+  { 
+    id: 1, 
+    name: "Sharaf Electronics Guideline", 
+    category: "Brand Systems", 
+    featured: true,
+    image: "/projects/sharaf_electronics_guideline.webp"
+  },
+  { 
+    id: 2, 
+    name: "Hello Products", 
+    category: "Packaging Design", 
+    featured: true,
+    image: "/projects/hello_products.webp"
+  },
+  { 
+    id: 3, 
+    name: "Make It Personal", 
+    category: "Retail Design", 
+    featured: true,
+    image: "/projects/make_it_personal.webp"
+  },
+  { 
+    id: 4, 
+    name: "Mykozie Logo", 
+    category: "Branding", 
+    featured: false,
+    image: "/projects/mykozie_logo.webp"
+  },
+  { 
+    id: 5, 
+    name: "BBQ Sauce", 
+    category: "Packaging Design", 
+    featured: false,
+    image: "/projects/bbq_sauce.webp"
+  },
+  { 
+    id: 6, 
+    name: "Hello Hot Ketchup", 
+    category: "Product Design", 
+    featured: false,
+    image: "/projects/hello_hot_ketchup.webp"
+  },
+  { 
+    id: 7, 
+    name: "Dipping Sauce Package", 
+    category: "Packaging", 
+    featured: false,
+    image: "/projects/dipping_sauce_package.webp"
+  },
+  { 
+    id: 8, 
+    name: "Social Media Posts", 
+    category: "Digital Content", 
+    featured: false,
+    image: "/projects/social_media_posts.webp"
+  },
+  { 
+    id: 9, 
+    name: "Exhibition Stand Design", 
+    category: "Retail Design", 
+    featured: false,
+    image: "/projects/exhibition_stand_design.webp"
+  },
+  { 
+    id: 10, 
+    name: "Exhibition Stand Design 2", 
+    category: "Retail Design", 
+    featured: false,
+    image: "/projects/exhibition_stand_design_2.webp"
+  },
+  { 
+    id: 11, 
+    name: "Mazda Campaign 2", 
+    category: "Automotive", 
+    featured: false,
+    image: "/projects/mazda_campaign_2.webp"
+  },
+  { 
+    id: 12, 
+    name: "Chillout Dubai", 
+    category: "Event Design", 
+    featured: false,
+    image: "/projects/chillout_dubai.webp"
+  },
 ];
 
 export default function Portfolio() {
@@ -58,11 +130,11 @@ export default function Portfolio() {
             {featuredProjects.map((project) => (
               <div key={project.id} className="group cursor-pointer">
                 <div className="bg-card border border-border aspect-video mb-4 flex items-center justify-center overflow-hidden hover:border-accent transition-colors">
-                  <div className="text-center">
-                    <div className="text-6xl font-bold text-muted-foreground opacity-50">
-                      {project.id}
-                    </div>
-                  </div>
+                  <img 
+                    src={project.image} 
+                    alt={project.name}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
                 </div>
                 <div className="space-y-2">
                   <p className="text-sm font-semibold text-accent uppercase tracking-wide">
@@ -87,11 +159,11 @@ export default function Portfolio() {
             {otherProjects.map((project) => (
               <div key={project.id} className="group cursor-pointer">
                 <div className="bg-card border border-border aspect-square mb-3 flex items-center justify-center overflow-hidden hover:border-accent transition-colors">
-                  <div className="text-center">
-                    <div className="text-4xl font-bold text-muted-foreground opacity-50">
-                      {project.id}
-                    </div>
-                  </div>
+                  <img 
+                    src={project.image} 
+                    alt={project.name}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
                 </div>
                 <div className="space-y-1">
                   <p className="text-xs font-semibold text-accent uppercase tracking-wide">
