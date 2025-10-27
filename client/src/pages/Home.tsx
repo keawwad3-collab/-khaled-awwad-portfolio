@@ -78,11 +78,11 @@ export default function Home() {
           </div>
 
           {/* Hero Image */}
-          <div className="bg-gray-100 border-2 border-black aspect-square flex items-center justify-center overflow-hidden">
+          <div className="overflow-hidden rounded-lg">
             <img 
-              src="/ka-logo.png" 
-              alt="KA Logo" 
-              className="w-3/4 h-3/4 object-contain"
+              src="/hero-banner.jpg" 
+              alt="Creative Portfolio Hero" 
+              className="w-full h-full object-cover"
             />
           </div>
         </section>
