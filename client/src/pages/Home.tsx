@@ -9,7 +9,7 @@ export default function Home() {
       category: "Brand Systems",
       description: "Enterprise-scale creative systems for 22+ retail locations ensuring 100% brand consistency across multiple countries.",
       metrics: ["22+ Locations | 4 Countries", "100% Consistency"],
-      image: "/projects/sharaf_electronics_guideline.webp",
+      image: "/projects/sharaf_electronics_guideline.png",
       behanceLink: "https://www.behance.net/gallery/16691125/Sharaf-Electornics-Guidleline"
     },
     {
@@ -18,7 +18,7 @@ export default function Home() {
       category: "Digital Marketing",
       description: "FMCG brand ecosystem design and digital strategy focused on customer lifecycle value and market expansion.",
       metrics: ["20+ Products | ↑ CLV", "3 Regions"],
-      image: "/projects/hello_hot_ketchup.webp",
+      image: "/projects/hello_hot_ketchup.png",
       behanceLink: "https://www.behance.net/gallery/104490495/Hello-Hot-Ketchup"
     },
     {
@@ -80,7 +80,7 @@ export default function Home() {
           {/* Hero Image */}
           <div className="overflow-hidden rounded-lg">
             <img 
-              src="/hero-banner.jpg" 
+              src="/hero-banner.png" 
               alt="Creative Portfolio Hero" 
               className="w-full h-full object-cover"
             />
@@ -227,7 +227,7 @@ export default function Home() {
             <div>
               <h4 className="font-bold text-black mb-4">Connect</h4>
               <ul className="space-y-2 text-gray-700">
-                <li><a href="https://linkedin.com/in/khaledawwad" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-600">LinkedIn</a></li>
+                <li><a href="https://linkedin.com/in/awwad-khaled" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-600">LinkedIn</a></li>
                 <li><a href="https://behance.net/khaledawwad" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-600">Behance</a></li>
                 <li><Link href="/contact" className="hover:text-yellow-600">Contact</Link></li>
               </ul>

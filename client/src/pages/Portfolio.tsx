@@ -207,7 +207,7 @@ export default function Portfolio() {
             <div>
               <h4 className="font-bold text-black mb-4">Connect</h4>
               <ul className="space-y-2 text-gray-700">
-                <li><a href="https://linkedin.com/in/khaledawwad" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-600">LinkedIn</a></li>
+                <li><a href="https://linkedin.com/in/awwad-khaled" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-600">LinkedIn</a></li>
                 <li><a href="https://behance.net/khaledawwad" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-600">Behance</a></li>
                 <li><Link href="/contact" className="hover:text-yellow-600">Contact</Link></li>
               </ul>

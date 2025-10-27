@@ -90,7 +90,7 @@ export default function Contact() {
               
               <div className="space-y-4">
                 <a 
-                  href="https://linkedin.com/in/khaledawwad" 
+                  href="https://linkedin.com/in/awwad-khaled" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center gap-4 p-4 border-2 border-border hover:border-accent hover:bg-gray-50 transition-all"
@@ -100,7 +100,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="font-semibold text-black">LinkedIn</p>
-                    <p className="text-sm text-foreground">linkedin.com/in/khaledawwad</p>
+                    <p className="text-sm text-foreground">linkedin.com/in/awwad-khaled</p>
                   </div>
                 </a>
 
@@ -222,7 +222,7 @@ export default function Contact() {
             <div>
               <h4 className="font-bold text-black mb-4">Connect</h4>
               <ul className="space-y-2 text-foreground">
-                <li><a href="https://linkedin.com/in/khaledawwad" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a href="https://linkedin.com/in/awwad-khaled" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
                 <li><a href="https://behance.net/khaledawwad" target="_blank" rel="noopener noreferrer">Behance</a></li>
                 <li><Link href="/contact">Contact</Link></li>
               </ul>

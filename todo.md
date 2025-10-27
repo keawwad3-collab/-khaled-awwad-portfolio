@@ -133,3 +133,15 @@
 - [ ] Test all external links (Behance, company websites, LinkedIn)
 - [ ] Ensure portfolio images link to correct projects
 
+
+
+
+## URGENT UPDATES - User Requested
+- [x] Update Go Sport case study link to uae.gosportme.com
+- [x] Remove "View on Behance" button from DesignFab case study
+- [x] Update LinkedIn URL to www.linkedin.com/in/awwad-khaled
+- [x] Replace Hot Ketchup image with uploaded version
+- [x] Replace Sharaf Electronics image with uploaded version
+- [x] Replace DG Plus image with uploaded version
+- [x] Replace hero banner with new uploaded banner image
+

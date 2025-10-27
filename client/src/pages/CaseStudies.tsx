@@ -31,7 +31,7 @@ const caseStudies = [
       "Developed and applied cohesive branding systems across digital and physical mediums"
     ],
     companyLink: "https://www.designfab.co",
-    behanceLink: "https://www.behance.net/gallery/16691125/Sharaf-Electornics-Guidleline"
+    behanceLink: ""
   },
   {
     id: 3,
@@ -46,7 +46,7 @@ const caseStudies = [
       "Successfully integrated omnichannel touchpoints, leading to 15% increase in app downloads",
       "Established new standard for retail experience design to be rolled out across future locations"
     ],
-    companyLink: "https://www.sharafgroup.com",
+    companyLink: "https://uae.gosportme.com",
     behanceLink: "https://www.behance.net/gallery/29317501/MAKE-IT-PERSONAL"
   }
 ];
@@ -133,14 +133,16 @@ export default function CaseStudies() {
                       Visit Company Website
                     </a>
 
-                    <a 
-                      href={study.behanceLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block border-2 border-black hover:bg-black hover:text-white text-black font-semibold py-3 px-4 text-center transition-colors"
-                    >
-                      View on Behance
-                    </a>
+                    {study.behanceLink && (
+                      <a 
+                        href={study.behanceLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block border-2 border-black hover:bg-black hover:text-white text-black font-semibold py-3 px-4 text-center transition-colors"
+                      >
+                        View on Behance
+                      </a>
+                    )}
 
                     <Link href="/portfolio">
                       <button className="w-full border-2 border-gray-300 hover:border-black text-black font-semibold py-3 px-4 transition-colors">
@@ -183,7 +185,7 @@ export default function CaseStudies() {
             <div>
               <h4 className="font-bold text-black mb-4">Connect</h4>
               <ul className="space-y-2 text-gray-700">
-                <li><a href="https://linkedin.com/in/khaledawwad" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-600">LinkedIn</a></li>
+                <li><a href="https://linkedin.com/in/awwad-khaled" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-600">LinkedIn</a></li>
                 <li><a href="https://behance.net/khaledawwad" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-600">Behance</a></li>
                 <li><Link href="/contact" className="hover:text-yellow-600">Contact</Link></li>
               </ul>
