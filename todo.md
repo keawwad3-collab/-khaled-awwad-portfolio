@@ -145,3 +145,60 @@
 - [x] Replace DG Plus image with uploaded version
 - [x] Replace hero banner with new uploaded banner image
 
+
+
+
+## RECRUITMENT-FOCUSED PORTFOLIO UPGRADE
+### Content Updates
+- [ ] Remove all "Google Ads" and "Paid Ads" references
+- [ ] Replace with "Digital Strategy", "Content Marketing", "Creative Campaigns", "SEO Optimization"
+- [ ] Update case studies with quantified results (+40% traffic, -35% turnaround, etc.)
+- [ ] Rewrite content with recruiter-focused tone emphasizing leadership and strategy
+
+### Visual Enhancements
+- [ ] Extract high-quality images from designfab.co for Designfab and Sharaf projects
+- [ ] Optimize all images to .webp format with lazy loading
+- [ ] Ensure hero images are 1920px width minimum
+- [ ] Ensure project images are 1080px width minimum
+- [ ] Maintain color consistency across all images
+
+### Professional Animations
+- [ ] Add hero text fade-up animation
+- [ ] Implement parallax scroll effect on hero
+- [ ] Add hover lift and accent glow to project cards
+- [ ] Create smooth slide/fade-in for section transitions (0.4-0.6s timing)
+- [ ] Add button hover color morph and glow effects
+- [ ] Implement contact form input focus animations
+- [ ] Install and configure Framer Motion for React animations
+
+### SEO & Metadata
+- [ ] Fix %VITE_APP_TITLE% to "Khaled Awwad | Digital Marketing & Retail Design Manager"
+- [ ] Add comprehensive meta description
+- [ ] Implement OpenGraph tags for social sharing
+- [ ] Add Twitter card metadata
+- [ ] Create JSON-LD Person schema markup
+- [ ] Add favicon to all pages
+- [ ] Create robots.txt file
+- [ ] Generate sitemap.xml
+
+### Links & Accessibility
+- [ ] Verify all external links open in new tabs
+- [ ] Test all LinkedIn, Behance, Designfab, Sharaf, Go Sport, Hello Food links
+- [ ] Add descriptive alt text to all images
+- [ ] Ensure mobile responsiveness across all viewports
+- [ ] Test text readability on all devices
+
+### Performance Optimization
+- [ ] Add preconnect for Google Fonts
+- [ ] Compress all image assets
+- [ ] Implement lazy loading for all images
+- [ ] Optimize bundle size
+- [ ] Test performance on Vercel preview
+
+### Brand System Consistency
+- [ ] Verify color palette: Black #000000, Gold #D4AF37, White #FFFFFF, Gray #CCCCCC
+- [ ] Confirm accent colors: Teal #16A085, Yellow #F39C12, Blue #2C5F8D, Red #E74C3C
+- [ ] Ensure Montserrat 700 for headings, Source Sans 3 400/600 for body
+- [ ] Implement 80-120px section rhythm
+- [ ] Use 12-column grid layout consistently
+
