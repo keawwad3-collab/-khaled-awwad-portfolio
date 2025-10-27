@@ -72,14 +72,6 @@ export default function Contact() {
                   </a>
                 </div>
 
-                {/* Phone */}
-                <div className="space-y-2">
-                  <p className="text-sm font-semibold text-accent uppercase tracking-wide">Phone</p>
-                  <a href="tel:+1234567890" className="text-xl text-black hover:text-accent transition-colors">
-                    +1 (647) 555-0123
-                  </a>
-                </div>
-
                 {/* Location */}
                 <div className="space-y-2">
                   <p className="text-sm font-semibold text-accent uppercase tracking-wide">Location</p>
