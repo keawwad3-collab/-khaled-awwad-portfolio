@@ -224,3 +224,29 @@
 - [x] Keep single Behance link in hero and about sections
 - [x] Update copy to be outcome-driven and leadership-focused
 
+
+
+
+## FINAL BRAND STRATEGY AUDIT & LAUNCH PREPARATION
+- [ ] Audit and verify every internal and external link (Behance, LinkedIn, Contact, mailto)
+- [ ] Fix or replace any broken URLs; confirm HTTPS usage throughout
+- [ ] Audit metadata, anchors, and navigation for consistency
+- [ ] Hide/remove all portfolio sections, grids, and menu items across all devices
+- [ ] Remove all "View Projects," "Portfolio," or "Case Study" references
+- [ ] Retain single Behance link: https://www.behance.net/awwadkhaled
+- [ ] Remove all numeric percentages from copy
+- [ ] Change "+40% Organic Growth" → "Organic Growth"
+- [ ] Change "−35% Design Turnaround" → "Design Turnaround Improvement"
+- [ ] Change "+30% Brand Consistency" → "Brand Consistency"
+- [ ] Update Hero H1 to: "Building Stronger Brands Through Strategy and Design."
+- [ ] Update Hero subhead to: "Where creative direction meets measurable growth."
+- [ ] Ensure hero banners load correctly (desktop + mobile .webp)
+- [ ] Fix mobile hero text alignment, spacing, and safe-area padding
+- [ ] Remove visual overlap between header and hero content
+- [ ] Disable parallax and heavy animations on mobile
+- [ ] Refine hover interactions (scale 1.02 + gold border; no glow)
+- [ ] Update meta title: "Khaled Awwad | Brand Strategy & Creative Direction"
+- [ ] Update meta description with brand strategist focus
+- [ ] Validate JSON-LD, sitemap.xml, robots.txt
+- [ ] Confirm CLS = 0; preload fonts; lazy-load non-hero visuals
+
