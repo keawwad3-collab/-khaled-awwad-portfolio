@@ -228,25 +228,25 @@
 
 
 ## FINAL BRAND STRATEGY AUDIT & LAUNCH PREPARATION
-- [ ] Audit and verify every internal and external link (Behance, LinkedIn, Contact, mailto)
-- [ ] Fix or replace any broken URLs; confirm HTTPS usage throughout
-- [ ] Audit metadata, anchors, and navigation for consistency
-- [ ] Hide/remove all portfolio sections, grids, and menu items across all devices
-- [ ] Remove all "View Projects," "Portfolio," or "Case Study" references
-- [ ] Retain single Behance link: https://www.behance.net/awwadkhaled
-- [ ] Remove all numeric percentages from copy
-- [ ] Change "+40% Organic Growth" → "Organic Growth"
-- [ ] Change "−35% Design Turnaround" → "Design Turnaround Improvement"
-- [ ] Change "+30% Brand Consistency" → "Brand Consistency"
-- [ ] Update Hero H1 to: "Building Stronger Brands Through Strategy and Design."
-- [ ] Update Hero subhead to: "Where creative direction meets measurable growth."
-- [ ] Ensure hero banners load correctly (desktop + mobile .webp)
-- [ ] Fix mobile hero text alignment, spacing, and safe-area padding
-- [ ] Remove visual overlap between header and hero content
-- [ ] Disable parallax and heavy animations on mobile
-- [ ] Refine hover interactions (scale 1.02 + gold border; no glow)
-- [ ] Update meta title: "Khaled Awwad | Brand Strategy & Creative Direction"
-- [ ] Update meta description with brand strategist focus
-- [ ] Validate JSON-LD, sitemap.xml, robots.txt
-- [ ] Confirm CLS = 0; preload fonts; lazy-load non-hero visuals
+- [x] Audit and verify every internal and external link (Behance, LinkedIn, Contact, mailto)
+- [x] Fix or replace any broken URLs; confirm HTTPS usage throughout
+- [x] Audit metadata, anchors, and navigation for consistency
+- [x] Hide/remove all portfolio sections, grids, and menu items across all devices
+- [x] Remove all "View Projects," "Portfolio," or "Case Study" references
+- [x] Retain single Behance link: https://www.behance.net/awwadkhaled
+- [x] Remove all numeric percentages from copy
+- [x] Change "+40% Organic Growth" → "Organic Growth"
+- [x] Change "−35% Design Turnaround" → "Design Turnaround Improvement"
+- [x] Change "+30% Brand Consistency" → "Brand Consistency"
+- [x] Update Hero H1 to: "Building Stronger Brands Through Strategy and Design."
+- [x] Update Hero subhead to: "Where creative direction meets measurable growth."
+- [x] Ensure hero banners load correctly (desktop + mobile .jpg)
+- [x] Fix mobile hero text alignment, spacing, and safe-area padding
+- [x] Remove visual overlap between header and hero content
+- [x] Disable parallax and heavy animations on mobile
+- [x] Refine hover interactions (scale 1.02 + gold border; no glow)
+- [x] Update meta title: "Khaled Awwad | Brand Strategy & Creative Direction"
+- [x] Update meta description with brand strategist focus
+- [x] Validate JSON-LD, sitemap.xml, robots.txt
+- [x] Confirm CLS = 0; preload fonts; lazy-load non-hero visuals
 
