@@ -250,3 +250,21 @@
 - [x] Validate JSON-LD, sitemap.xml, robots.txt
 - [x] Confirm CLS = 0; preload fonts; lazy-load non-hero visuals
 
+
+
+
+## FINAL BRAND CLEANUP & LAUNCH READY
+- [x] Remove metric chips block completely ("Organic Growth", "Design Turnaround Improvement", "Brand Consistency")
+- [ ] Verify no portfolio references remain across any page, footer, or mobile menu
+- [ ] Ensure hero contains only headline + subhead + CTAs
+- [ ] Verify all links work (Behance, LinkedIn, Contact, mailto)
+- [ ] Test all pages in desktop and mobile view
+- [ ] Confirm hero text visible and not obstructed by header on mobile
+- [ ] Fix spacing, scaling, and alignment for mobile (<768px)
+- [ ] Ensure no parallax on mobile
+- [ ] Verify hero images load correctly (.jpg format)
+- [ ] Maintain gold/black/white palette throughout
+- [ ] Remove all glow effects
+- [ ] Revalidate meta title and description
+- [ ] Test OG tags, favicon, and robots.txt
+

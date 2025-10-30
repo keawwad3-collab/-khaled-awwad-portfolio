@@ -7,11 +7,7 @@ export default function Home() {
   // Disable parallax on mobile for performance
   const heroParallax = useTransform(scrollY, [0, 800], [0, 40]);
 
-  const metrics = [
-    { label: "Organic Growth", delay: 0 },
-    { label: "Design Turnaround Improvement", delay: 0.15 },
-    { label: "Brand Consistency", delay: 0.3 }
-  ];
+
 
   return (
     <div className="min-h-screen bg-white">
@@ -105,27 +101,7 @@ export default function Home() {
               Where creative direction meets measurable growth.
             </motion.p>
 
-            {/* Metric Chips - NO PERCENTAGES */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.6 }}
-              className="flex flex-wrap justify-center gap-3 md:gap-4 pt-8 px-4"
-            >
-              {metrics.map((metric, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.4, delay: 0.8 + metric.delay, ease: [0.4, 0, 0.2, 1] }}
-                  className="px-4 md:px-6 py-2 md:py-3 bg-black/40 backdrop-blur-md border border-yellow-400/30 rounded-full"
-                >
-                  <span className="text-yellow-400 font-semibold text-xs md:text-sm lg:text-base">
-                    {metric.label}
-                  </span>
-                </motion.div>
-              ))}
-            </motion.div>
+
 
             {/* CTAs */}
             <motion.div
