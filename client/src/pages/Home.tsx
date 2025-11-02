@@ -267,11 +267,11 @@ export default function Home() {
                 description: "Achieved through strategic SEO optimization and content marketing campaigns across multiple brands."
               },
               {
-                title: "Design Turnaround Improvement",
+                title: "Workflow Optimization",
                 description: "Streamlined creative workflows and implemented scalable design systems for faster delivery."
               },
               {
-                title: "Brand Consistency",
+                title: "Brand Cohesion",
                 description: "Established comprehensive brand guidelines ensuring unified messaging across 22+ retail locations."
               },
               {

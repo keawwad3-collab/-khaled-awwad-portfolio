@@ -37,8 +37,6 @@ export default function Contact() {
           <div className="hidden md:flex gap-8">
             <Link href="/">Home</Link>
             <Link href="/about">About</Link>
-            <Link href="/portfolio">Portfolio</Link>
-            <Link href="/case-studies">Case Studies</Link>
             <Link href="/contact" className="text-accent font-semibold">Contact</Link>
           </div>
         </div>
@@ -215,8 +213,7 @@ export default function Contact() {
               <h4 className="font-bold text-black mb-4">Quick Links</h4>
               <ul className="space-y-2 text-foreground">
                 <li><Link href="/about">About</Link></li>
-                <li><Link href="/portfolio">Portfolio</Link></li>
-                <li><Link href="/case-studies">Case Studies</Link></li>
+                <li><Link href="/contact">Contact</Link></li>
               </ul>
             </div>
             <div>

@@ -268,3 +268,25 @@
 - [ ] Revalidate meta title and description
 - [ ] Test OG tags, favicon, and robots.txt
 
+
+
+
+## FINAL ENFORCED CLEANUP - BUILD GUARD
+- [x] Delete /portfolio, /case-studies routes and page files
+- [ ] Remove Portfolio links from header navigation (desktop + mobile)
+- [ ] Remove Portfolio links from footer
+- [ ] Remove Portfolio references from About page
+- [x] Update sitemap.xml to remove portfolio URLs
+- [x] Implement 404 or redirect for /portfolio, /projects, /case-studies URLs
+- [x] Reorganize header navigation to: Home, About, Contact only
+- [x] Verify mobile navigation matches desktop
+- [x] Create scripts/final-check.js verification script
+- [x] Add forbidden keywords check: portfolio, projects, case study, Organic Growth, Design Turnaround, Brand Consistency
+- [x] Add prebuild script to package.json
+- [ ] Verify Behance link works: https://www.behance.net/awwadkhaled
+- [ ] Verify Contact mailto link works
+- [ ] Verify LinkedIn link works
+- [ ] Test layout on mobile and desktop
+- [ ] Take final screenshots (desktop hero, mobile hero, About, header/footer)
+- [ ] Deploy and verify on Vercel
+

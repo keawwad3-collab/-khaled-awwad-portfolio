@@ -13,8 +13,6 @@ export default function About() {
           <div className="hidden md:flex gap-8">
             <Link href="/" className="text-white hover:text-yellow-400 transition-colors">Home</Link>
             <Link href="/about" className="text-white font-semibold hover:text-yellow-400 transition-colors">About</Link>
-            <Link href="/portfolio" className="text-white hover:text-yellow-400 transition-colors">Portfolio</Link>
-            <Link href="/case-studies" className="text-white hover:text-yellow-400 transition-colors">Case Studies</Link>
             <Link href="/contact" className="text-white hover:text-yellow-400 transition-colors">Contact</Link>
           </div>
         </div>
@@ -148,9 +146,9 @@ export default function About() {
               <p className="text-yellow-600 font-semibold">Designfab Inc. | Vaughan, Ontario, Canada</p>
               <p className="text-sm text-gray-600 mb-3">Oct 2023 – May 2024 (8 months)</p>
               <ul className="space-y-2 text-sm text-gray-700">
-                <li>• Led creative strategy and execution for high-impact digital and print design projects</li>
+                <li>• Led creative strategy and execution for high-impact digital and print design initiatives</li>
                 <li>• Achieved 75% enhancement in client branding through innovative design solutions</li>
-                <li>• Directed and mentored a team of designers, delivering projects on time and within budget</li>
+                <li>• Directed and mentored a team of designers, delivering work on time and within budget</li>
                 <li>• Managed client relationships and translated complex requirements into compelling visual narratives</li>
               </ul>
             </div>
@@ -275,8 +273,7 @@ export default function About() {
               <h4 className="font-bold text-black mb-4">Quick Links</h4>
               <ul className="space-y-2 text-gray-700">
                 <li><Link href="/about" className="hover:text-yellow-600">About</Link></li>
-                <li><Link href="/portfolio" className="hover:text-yellow-600">Portfolio</Link></li>
-                <li><Link href="/case-studies" className="hover:text-yellow-600">Case Studies</Link></li>
+                <li><Link href="/contact" className="hover:text-yellow-600">Contact</Link></li>
               </ul>
             </div>
             <div>
