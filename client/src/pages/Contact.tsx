@@ -32,7 +32,7 @@ export default function Contact() {
       <nav className="sticky top-0 z-50 bg-white border-b border-border">
         <div className="container max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
           <Link href="/">
-            <img src="/ka-logo.png" alt="KA Logo" className="h-10 w-10 object-contain" />
+            <img src="/ka-logo.png" alt="KA Logo" className="h-16 w-16 object-contain" />
           </Link>
           <div className="hidden md:flex gap-8">
             <Link href="/">Home</Link>
@@ -65,8 +65,8 @@ export default function Contact() {
                 {/* Email */}
                 <div className="space-y-2">
                   <p className="text-sm font-semibold text-accent uppercase tracking-wide">Email</p>
-                  <a href="mailto:khaled@example.com" className="text-xl text-black hover:text-accent transition-colors">
-                    khaled@khaledawwad.com
+                  <a href="mailto:keawwad@hotmail.com" className="text-xl text-black hover:text-accent transition-colors">
+                    keawwad@hotmail.com
                   </a>
                 </div>
 
@@ -117,20 +117,7 @@ export default function Contact() {
                   </div>
                 </a>
 
-                <a 
-                  href="https://instagram.com/khaledawwad" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-4 p-4 border-2 border-border hover:border-accent hover:bg-gray-50 transition-all"
-                >
-                  <div className="w-12 h-12 bg-accent flex items-center justify-center text-black font-bold">
-                    @
-                  </div>
-                  <div>
-                    <p className="font-semibold text-black">Instagram</p>
-                    <p className="text-sm text-foreground">@khaledawwad</p>
-                  </div>
-                </a>
+
               </div>
             </div>
           </div>

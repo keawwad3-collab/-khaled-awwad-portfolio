@@ -18,7 +18,7 @@ export default function Home() {
             <motion.img 
               src="/ka-logo.png" 
               alt="KA Logo" 
-              className="h-10 w-10 object-contain cursor-pointer" 
+              className="h-16 w-16 object-contain cursor-pointer" 
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.2 }}
             />

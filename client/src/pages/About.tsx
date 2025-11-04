@@ -8,7 +8,7 @@ export default function About() {
       <nav className="sticky top-0 z-50 bg-black border-b-2 border-gray-300">
         <div className="container max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
           <Link href="/">
-            <img src="/ka-logo.png" alt="KA Logo" className="h-10 w-10 object-contain" />
+            <img src="/ka-logo.png" alt="KA Logo" className="h-16 w-16 object-contain" />
           </Link>
           <div className="hidden md:flex gap-8">
             <Link href="/" className="text-white hover:text-yellow-400 transition-colors">Home</Link>
